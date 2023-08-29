@@ -3,6 +3,7 @@ import { Link, useRouteError } from "react-router-dom"
 import img from "../assets/not-found.svg"
 
 const Error = () => {
+  const error = useRouteError()
   if (error.status === 404) {
     return (
       <Wrapper>
